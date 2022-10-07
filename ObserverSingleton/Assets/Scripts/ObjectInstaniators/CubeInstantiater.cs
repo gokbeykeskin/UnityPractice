@@ -8,6 +8,7 @@ public class CubeInstantiater : MonoBehaviour
 {
     //Observer2
     [SerializeField] GameObject cubePrefab;
+    [Serializable] public class ObjectSpawned : UnityEvent<Color>{}
     public ObjectSpawned cubeSpawned;
     //Added the listener on editor. (sapphireInstaniater.InstantiateSapphire)
     void Awake()
@@ -28,6 +29,5 @@ public class CubeInstantiater : MonoBehaviour
 
 
 
-    [Serializable] public class ObjectSpawned : UnityEvent<Color>{}
 
 }
