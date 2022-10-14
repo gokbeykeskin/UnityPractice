@@ -20,7 +20,7 @@ public class HealthManager : MonoBehaviour, IDamagable
 
     public void TakeDamage(){
         health-=1;
-        OnHit.Invoke();
+        OnHit?.Invoke();
         if(health<=0){
             OnDead?.Invoke();
             GetComponent<Movable>().enabled=false;
