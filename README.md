@@ -13,6 +13,6 @@ Also spawn a sapphire using Unity Events on top of the cube which gets the same 
 
 ## [DamageSystem Project](https://github.com/gokbeykeskin/UnityPractice/tree/main/DamageSystem)
 Learning Goals:
--DoTween Package
--Usage of Interfaces,Abstract Classes, Abstract&Virtual Methods on Unity Game Development
+- DoTween Package
+- Usage of Interfaces,Abstract Classes, Abstract&Virtual Methods on Unity Game Development
 Task: Create a Damage System using interfaces, abstract classes and Unity Events
