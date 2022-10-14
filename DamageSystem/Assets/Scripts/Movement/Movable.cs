@@ -10,7 +10,7 @@ public abstract class Movable : MonoBehaviour
     protected bool facingRight=true;
 
     [SerializeField] float jumpForce=5f;
- void OnCollisionEnter2D(Collision2D collisionInfo)
+    void OnCollisionEnter2D(Collision2D collisionInfo)
     {
         if(collisionInfo.gameObject.tag=="Ground") grounded=true;
     }
