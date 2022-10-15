@@ -18,3 +18,12 @@ Learning Goals:
 - Usage of Interfaces,Abstract Classes, Abstract&Virtual Methods on Unity Game Development
 
 Task: Create a Damage System using interfaces, abstract classes and Unity Events
+
+## [DataTypes](https://github.com/gokbeykeskin/UnityPractice/tree/main/DataTypes)
+Learning Goals:
+- C# Generic Class Implementation
+- ScriptableObjects
+- Object Pool Design Pattern
+
+Task: Implement Generic Queue,List and Dictionary Classes
+
