@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class HealthUI : MonoBehaviour
 {
     [SerializeField] List<Image> hearths;
-    Stack<Image> hearthImages;// = new ArrayList<Image>();
+    Stack<Image> hearthImages;
 
     void Awake()
     {

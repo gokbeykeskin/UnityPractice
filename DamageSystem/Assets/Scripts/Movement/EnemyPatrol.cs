@@ -29,7 +29,7 @@ public class EnemyPatrol : Movable
         collisionInfo.gameObject.GetComponent<Rigidbody2D>()?.AddRelativeForce(new Vector2(0,10f),ForceMode2D.Impulse);
 
         if(collisionInfo.gameObject.TryGetComponent<IDamagable>(out IDamagable damagable)){
-            damagable.TakeDamage();
+            damagable.TakeDamage(1);
             
         }
     }

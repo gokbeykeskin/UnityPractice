@@ -33,4 +33,8 @@ public abstract class Movable : MonoBehaviour
         transform.localScale = scale;
         facingRight= !facingRight;
     }
+
+    public void ToggleMovement(){
+        this.enabled = !this.enabled;
+    }
 }

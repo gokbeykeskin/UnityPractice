@@ -9,6 +9,7 @@ public class PlayerAnimationController : AnimationController
     }
 
     public void WalkingAnim(){
+        animator.SetBool("Jump",false);
         animator.SetBool("Run",true);
     }
 

@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class HealthManager : MonoBehaviour, IDamagable
+public class HealthHandler : MonoBehaviour, IDamagable
 {
     [SerializeField] int maxHealth = 2;
     public UnityEvent OnDead,OnHit;
+    Movable movable;
     public int health{
         get;
         set;
@@ -14,21 +15,22 @@ public class HealthManager : MonoBehaviour, IDamagable
     // Start is called before the first frame update
     void Start()
     {
+        movable=GetComponent<Movable>();
         health = maxHealth;
     }
 
 
-    public void TakeDamage(){
-        health-=1;
-        OnHit?.Invoke();
+    public void TakeDamage(int damage){
+
+        if(health>0){
+            health-=damage;
+            OnHit?.Invoke();
+        }
+        
         if(health<=0){
             OnDead?.Invoke();
-            GetComponent<Movable>().enabled=false;
+            movable.ToggleMovement();
         }
-    }
-    // Update is called once per frame
-    void Update()
-    {
-        
+
     }
 }

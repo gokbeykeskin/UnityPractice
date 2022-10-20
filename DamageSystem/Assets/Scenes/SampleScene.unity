@@ -2918,6 +2918,7 @@ GameObject:
   m_Component:
   - component: {fileID: 309430596}
   - component: {fileID: 309430595}
+  - component: {fileID: 309430597}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -2951,6 +2952,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &309430597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 309430594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c433c4ac2479ce7498586a2305159478, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pools:
+  - {fileID: 11400000, guid: 736b5ef7c8fcda742922a50592f74bfe, type: 2}
 --- !u!1 &319609893
 GameObject:
   m_ObjectHideFlags: 0
@@ -9953,7 +9968,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 2.1832027, y: -0.01737547}
+  m_Offset: {x: -1.3808432, y: -0.01737547}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -9964,7 +9979,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 33.47125, y: 0.53675413}
+  m_Size: {x: 40.599342, y: 0.53675413}
   m_EdgeRadius: 0
 --- !u!1 &1165132441
 GameObject:
@@ -16776,6 +16791,7 @@ GameObject:
   - component: {fileID: 1854429052}
   - component: {fileID: 1854429056}
   - component: {fileID: 1854429055}
+  - component: {fileID: 1854429059}
   - component: {fileID: 1854429054}
   - component: {fileID: 1854429053}
   - component: {fileID: 1854429057}
@@ -17006,6 +17022,7 @@ MonoBehaviour:
   bullet: {fileID: 4899010629250877553, guid: 458d3aa49402bbc47b0f50c602f88d86, type: 3}
   shootPoint: {fileID: 43805502}
   bulletSpeed: 25
+  pool: {fileID: 309430597}
 --- !u!114 &1854429057
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17073,6 +17090,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e60e545a2d637b4419ade5fe675503b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1854429059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1854429048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb412ffc3eb6d8c448346850bc11435e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnLeftMouseClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1854429056}
+        m_TargetAssemblyTypeName: AttackHandler, Assembly-CSharp
+        m_MethodName: Attack
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1862785456
 GameObject:
   m_ObjectHideFlags: 0

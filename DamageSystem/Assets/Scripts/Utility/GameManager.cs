@@ -14,6 +14,7 @@ public class GameManager : MonoSingleton
 
     public void EnemyDead(){
         enemiesLeft-=1;
+        Debug.Log("EnemiesLeft:"+enemiesLeft);
         if(enemiesLeft<=0) StartCoroutine(RestartGame());
     }
 
