@@ -16,7 +16,7 @@ Also spawn a sapphire using Unity Events on top of the cube which gets the same 
 Learning Goals:
 - DoTween Package
 - Usage of Interfaces,Abstract Classes, Abstract&Virtual Methods on Unity Game Development
-
+- Pass By Reference in C# (out and ref)
 Task: Create a Damage System using interfaces, abstract classes and Unity Events
 
 ## [DataTypes](https://github.com/gokbeykeskin/UnityPractice/tree/main/DataTypes)
@@ -26,4 +26,13 @@ Learning Goals:
 - Object Pool Design Pattern
 
 Task: Implement Generic Queue,List and Dictionary Classes
+
+## [RunAndShoot](https://github.com/gokbeykeskin/UnityPractice/tree/main/RunAndShoot)
+Learning Goals:
+- Raycasting
+- Blend Tree
+- Layers
+- Avatar Mask
+
+Task: Create a character with seperate animation controllers for upper and lower body using Avatar Mask. Character can shoot through the laser wall but can't walk through in this project.
 
