@@ -36,3 +36,13 @@ Learning Goals:
 
 Task: Create a character with seperate animation controllers for upper and lower body using Avatar Mask. Character can shoot through the laser wall but can't walk through in this project.
 
+
+## [UI](https://github.com/gokbeykeskin/UnityPractice/tree/main/UI)
+Learning Goals:
+- Layout Groups
+- Anchors and pivots
+- JSON & PlayerPrefs
+
+Task: Create a shopping system with a scrollable layout group. Save the data (owned objects and their amounts) as JSON files and save the money as PlayerPref.
+
+
