@@ -3,7 +3,7 @@ The small Unity Projects I created while learning intermediate Unity Scripting s
 
 
 ## [ObserverSingleton Project](https://github.com/gokbeykeskin/UnityPractice/tree/main/ObserverSingleton)
-Learning Goals:
+### Learning Goals:
 - Delegates
 - Unity Actions
 - Events & Unity Events
@@ -13,14 +13,14 @@ Task: Print a Debug Line & Spawn a Cube each time a new scene is loaded using Un
 Also spawn a sapphire using Unity Events on top of the cube which gets the same color as the cube. 
 
 ## [DamageSystem Project](https://github.com/gokbeykeskin/UnityPractice/tree/main/DamageSystem)
-Learning Goals:
+### Learning Goals:
 - DoTween Package
 - Usage of Interfaces,Abstract Classes, Abstract&Virtual Methods on Unity Game Development
 - Pass By Reference in C# (out and ref)
 Task: Create a Damage System using interfaces, abstract classes and Unity Events
 
 ## [DataTypes](https://github.com/gokbeykeskin/UnityPractice/tree/main/DataTypes)
-Learning Goals:
+### Learning Goals:
 - C# Generic Class Implementation
 - ScriptableObjects
 - Object Pool Design Pattern
@@ -28,7 +28,7 @@ Learning Goals:
 Task: Implement Generic Queue,List and Dictionary Classes
 
 ## [RunAndShoot](https://github.com/gokbeykeskin/UnityPractice/tree/main/RunAndShoot)
-Learning Goals:
+### Learning Goals:
 - Raycasting
 - Blend Tree
 - Layers
@@ -38,11 +38,13 @@ Task: Create a character with seperate animation controllers for upper and lower
 
 
 ## [UI](https://github.com/gokbeykeskin/UnityPractice/tree/main/UI)
-Learning Goals:
+### Learning Goals:
 - Layout Groups
 - Anchors and pivots
 - JSON & PlayerPrefs
 
-Task: Create a shopping system with a scrollable layout group. Save the data (owned objects and their amounts) as JSON files and save the money as PlayerPref.
+## [PhotonFusion101](https://github.com/gokbeykeskin/UnityPractice/tree/main/PhotonFusion101)
+### Learning Goal:
+- Learning the basics of Photon Fusion Networking Library.
 
-
+I had some knowledge of soon to be deprecated networking library Photon PUN2 and I decided to learn Fusion instead. I followed the [Fusion 100](https://doc.photonengine.com/en-us/fusion/current/fusion-100/overview) series of the official documentation.
